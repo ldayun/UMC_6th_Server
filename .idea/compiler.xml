@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
@@ -12,7 +13,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring.spring.main" target="17" />
+      <module name="spring.spring.main~2" target="17" />
       <module name="spring.spring.test" target="17" />
+      <module name="spring.spring.test~2" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

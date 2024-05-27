@@ -22,8 +22,10 @@ public enum ErrorStatus implements BaseErrorCode {
     _FORBIDDEN(HttpStatus.FORBIDDEN, "COMMON403", "금지된 요청입니다."),
 
     _INTERNAL_SERVER_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "COMMON500", "서버 에러, 관리자에게 문의 바랍니다.") // 가장 일반적인 응답
-    , _UNAUTHORIZED(HttpStatus.UNAUTHORIZED, "COMMON401", "인증이 필요합니다.");
-
+    , _UNAUTHORIZED(HttpStatus.UNAUTHORIZED, "COMMON401", "인증이 필요합니다.")
+    ,FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOODCATEGORY404", "없는 음식 카테고리입니다."),
+    STORE_NOT_FOUND(HttpStatus.NOT_FOUND, "STORE_4001","가게가 없습니다.")
+    ,MISSION_NOT_FOUND(HttpStatus.NOT_FOUND, "MISSION_4001","미션이 없습니다.");;
 
     private final HttpStatus httpStatus;
     private final String code;
