@@ -20,6 +20,6 @@ public class StoreRequestDTO {
         @NotNull
         Integer reward;
         @NotBlank
-        String content;
+        String missionSpec;
     }
 }

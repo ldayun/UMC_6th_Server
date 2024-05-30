@@ -25,7 +25,8 @@ public enum ErrorStatus implements BaseErrorCode {
     , _UNAUTHORIZED(HttpStatus.UNAUTHORIZED, "COMMON401", "인증이 필요합니다.")
     ,FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOODCATEGORY404", "없는 음식 카테고리입니다."),
     STORE_NOT_FOUND(HttpStatus.NOT_FOUND, "STORE_4001","가게가 없습니다.")
-    ,MISSION_NOT_FOUND(HttpStatus.NOT_FOUND, "MISSION_4001","미션이 없습니다.");;
+    ,MISSION_NOT_FOUND(HttpStatus.NOT_FOUND, "MISSION_4001","미션이 없습니다.")
+    , INVALID_PAGE(HttpStatus.NOT_FOUND, "PAGE_4001","잘못된 페이지입니다.");
 
     private final HttpStatus httpStatus;
     private final String code;

@@ -26,7 +26,7 @@ public class Mission extends BaseEntity {
     private Store store;
 
     @Column(columnDefinition = "VARCHAR(100)")
-    private String content;
+    private String missionSpec;
 
     @Column(columnDefinition = "VARCHAR(10)")
     private String ownerCode;
@@ -37,5 +37,4 @@ public class Mission extends BaseEntity {
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL)
     private List<MemberMission> memberMissionList = new ArrayList<>();
-
 }
